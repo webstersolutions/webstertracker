@@ -222,8 +222,7 @@ alert(req.user.username);
     coords: {
       latitude: currentCoords.latitude,
       longitude: currentCoords.longitude,
-    },
-    user: req.user.username,
+    },    
     orientation: currentOrientation,
     timestamp: now()
   })
