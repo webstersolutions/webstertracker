@@ -223,6 +223,7 @@ function pushCurrentStatus() {
       latitude: currentCoords.latitude,
       longitude: currentCoords.longitude,
     },
+    user: socket.request.user,
     orientation: currentOrientation,
     timestamp: now()
   })
