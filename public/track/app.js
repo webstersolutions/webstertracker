@@ -217,12 +217,13 @@ var currentOrientation = null;
 
 function pushCurrentStatus() {
   if (!currentCoords) return
-alert(req.user.username);
+
   endpoint.child(myUuid).set({
     coords: {
       latitude: currentCoords.latitude,
       longitude: currentCoords.longitude,
-    },    
+    },  
+    user: req.user.username,
     orientation: currentOrientation,
     timestamp: now()
   })
